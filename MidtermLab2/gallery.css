@@ -1,0 +1,18 @@
+/* Center thumbnails and disable resizing and animation */
+.photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Creates 5 pictures per row */
+    gap: 10px; /* Adds spacing between pictures */
+    margin: 0 auto; /* Centers the grid horizontally */
+}
+
+.photo-gallery img {
+    width: 150px; /* Set a fixed width for images */
+    height: 150px; /* Set a fixed height for images */
+    object-fit: cover; /* Ensures the image fits within the dimensions */
+    transition: transform 0.3s ease; /* Adds a smooth transition effect */
+}
+
+.photo-gallery img:hover {
+    transform: scale(1.1); /* Slightly enlarges the image on hover */
+}

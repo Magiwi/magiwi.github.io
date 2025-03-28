@@ -1,0 +1,9 @@
+section {
+    text-align: center;
+}
+
+audio,
+video {
+    display: block;
+    margin: 20px auto; /* Centers the elements horizontally */
+}

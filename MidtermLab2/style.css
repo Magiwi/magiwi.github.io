@@ -6,7 +6,7 @@
 }
   
 .navbar a {
-    color: rgb(0, 0, 0);
+    color: white;
     padding: 14px 20px;
     text-decoration: none;
     font-weight: bold;
@@ -61,4 +61,7 @@ video {
     margin: 20px auto;
     border: 2px solid #2c3e50;
     border-radius: 8px;
+}
+body {
+    background-color: #ACC8E5;
 }
