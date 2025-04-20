@@ -1,0 +1,102 @@
+<html lang="en">
+    <head>
+        <title>Form</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div align="center">
+            <table class="tabls">
+                <form action="">
+                    <thead>
+                        <th class="hd">Name </th>
+                        <th class="hd">Value</th>
+                    </thead>
+                    
+                    <tbody>
+                        <tr>
+                            <td class="middle">
+                                <label for="name">Name:</label>
+                            </td>
+                            <td >
+                                <input type="text" id="name" name="name" placeholder="Type your name here">
+                            </td>
+                        </tr>
+                        <tr class="bottom">
+                            <td>
+                                <br>
+                                <label for="sex">Sex:</label>
+                            </td>
+                            <td class="middle">
+                                <input type="radio" name="sex" id="male" value="Male" checked>
+                                <label for="male">Male</label>
+                                <br>
+                                <input type="radio" id="female" name="sex" value="Female">
+                                <label for="female">Female</label>
+                                <br>
+                                <input type="radio" id="other" name="sex" value="Other">
+                                <label for="other">Other</label>
+                            </td>
+                        </tr>
+
+                        <tr class="bottom">
+                            <td class="middle">
+                                <label for="eye color">Eye color</label>
+                            </td>
+                            <td class="middle">
+                                <select name="eye color" id="eye color">
+                                    <option value="black" selected>Black</option>
+                                    <option value="brown">Brown</option>
+                                    <option value="blue">Blue</option>
+                                </select>
+                                
+                            </td>
+
+                        </tr>
+
+                        <tr class="bottom">
+                            <td middles>
+                                <label for="applies">Check all the Applies</label>
+                            </td>
+                            <td>
+                                
+                                <input type="checkbox" id="over 6ft. tall" name="over 6ft. tall">
+                                <label for="over 6ft. tall">Over 6ft. Tall</label>
+                                <br>
+                                <input type="checkbox" id="over 200 pounds" name="over 200 pounds">
+                                <label for="over 200 pounds">Over 200 pounds</label>
+                                <br>
+                                <input type="checkbox" id="over 6ft. tall" name="over 6ft. tall">
+                                <label for="over 6ft. tall">Over 6ft. Tall</label>
+                            </td>
+                        </tr>
+
+                        <tr class="bottom">
+                            <td class="middle">
+                                <br>
+                                <br>
+                                <label for="describe your athletic ability">Describe your athletic ability</label>
+                            </td>
+                            <td class="middle">
+                                <textarea rows="5" cols="20" id="describe your athletic ability" name="describe your athletic ability"></textarea>
+                            </td>
+                        </tr>
+                        
+                    </tbody>
+
+                    <tfoot>
+                        <tr class="bottom">
+                            <td colspan="3" class="middle">
+                                <div class="submit-container" align="center">
+                                    <button type="submit">Enter my Information</button>
+                                </div>
+                            </td>
+                        </tr>
+                        
+
+                    </tfoot>
+                </form>
+            </table>
+
+        </div>
+    </body>
+</html>
