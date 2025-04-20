@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Form & Invoice</title>
+    <link rel="stylesheet" href="index.css"> <!-- Or change to index.css depending on preference -->
+</head>
+<body>
+
+    <!-- Form Section -->
+    <div align="center">
+        <h2>Table & Forms</h2>
+        <table class="tabls">
+            <form action="">
+                <thead>
+                    <tr>
+                        <th class="hd">Name</th>
+                        <th class="hd">Value</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="middle">
+                            <label for="name">Name:</label>
+                        </td>
+                        <td>
+                            <input type="text" id="name" name="name" placeholder="Type your name here">
+                        </td>
+                    </tr>
+
+                    <tr class="bottom">
+                        <td><br><label for="sex">Sex:</label></td>
+                        <td class="middle">
+                            <input type="radio" name="sex" id="male" value="Male" checked>
+                            <label for="male">Male</label><br>
+                            <input type="radio" id="female" name="sex" value="Female">
+                            <label for="female">Female</label><br>
+                            <input type="radio" id="other" name="sex" value="Other">
+                            <label for="other">Other</label>
+                        </td>
+                    </tr>
+
+                    <tr class="bottom">
+                        <td class="middle"><label for="eye color">Eye color</label></td>
+                        <td class="middle">
+                            <select name="eye color" id="eye color">
+                                <option value="brown">Brown</option>
+                                <option value="blue">Blue</option>
+                                <option value="black" selected>Black</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr class="bottom">
+                        <td class="middle">
+                            <label for="applies">Check all that apply</label>
+                        </td>
+                        <td>
+                            <input type="checkbox" id="over6ft" name="over6ft">
+                            <label for="over6ft">Over 6ft. Tall</label><br>
+                            <input type="checkbox" id="over200" name="over200">
+                            <label for="over200">Over 200 pounds</label>
+                        </td>
+                    </tr>
+
+                    <tr class="bottom">
+                        <td class="middle"><br><br>
+                            <label for="athletic">Describe your athletic ability</label>
+                        </td>
+                        <td class="middle">
+                            <textarea rows="5" cols="20" id="athletic" name="athletic"></textarea>
+                        </td>
+                    </tr>
+                </tbody>
+
+                <tfoot>
+                    <tr class="bottom">
+                        <td colspan="2" class="middle">
+                            <div class="submit-container" align="center">
+                                <button type="submit">Enter my Information</button>
+                            </div>
+                        </td>
+                    </tr>
+                </tfoot>
+            </form>
+        </table>
+    </div>
+
+    <br><br><hr><br>
+
+    <div align="center">
+        <style>
+            .paycos{
+    background-color: #8DE4AF;
+}
+body{
+    text-align: justify;
+    font-family:Arial, Helvetica, sans-serif;
+}
+table{
+    border: 3px solid rgb(22, 13, 97);
+    border-collapse: collapse;
+    width: auto;
+    height: auto;
+}
+caption{
+    border-style: solid;
+    border: 2px solid rgb(22, 13, 97);
+    width: 95%;
+    height: auto;
+    background-color: #B4DFE5;
+    padding: 10px;
+    border-bottom: 4px solid rgb(22, 13, 97);
+    font-size: 20px;
+    font-family: sans-serif;
+    
+}
+tr{
+    text-align: left;
+}
+.clasjan{
+    text-align: right;
+}
+.mid{
+    text-align: center;
+}
+.blue{
+    background-color: #565988;
+    color: white;
+}
+.yellowish{
+    background-color: #EEF4E0;
+}
+.forms{
+    border: 0px;
+    border-style: 0%;
+}
+td,th{
+    border: 1px rgb(22, 13, 97);
+    border-style: ridge;
+
+}
+        </style>
+        <table class="Invoice">
+            <caption class="ocean">Invoice Tabular Data</caption>
+            <tr class="blue">
+                <th colspan="3">Invoice #123456789</th>
+                <th class="clasjan">14 January 2025</th>
+            </tr>
+            <tr class="paycos">
+                <td colspan="2"><b>Pay to:</b><br>Acme Billing Co.<br>123 Main St.<br>Cityville, NA 12345</td>
+                <td colspan="2"><b>Customer:</b><br>John Smith<br>321 Willow Way<br>Southeast Northwastershire, MA 54321</td>
+            </tr>
+            <tr class="blue">
+                <th>Name/Description</th>
+                <th>Qty.</th>
+                <th class="mid">@</th>
+                <th class="clasjan">Cost</th>
+            </tr>
+            <tr class="yellowish">
+                <td>Paperclips</td>
+                <td>1000</td>
+                <td class="mid">0.01</td>
+                <td class="clasjan">10.00</td>
+            </tr>
+            <tr>
+                <td>Staples (box)</td>
+                <td>100</td>
+                <td class="mid">1.00</td>
+                <td class="clasjan">100.00</td>
+            </tr>
+            <tr class="yellowish">
+                <td>Bond Paper (box)</td>
+                <td>100</td>
+                <td class="mid">1.00</td>
+                <td class="clasjan">110.00</td>
+            </tr>
+            <tr>
+                <th colspan="3">Subtotal</th>
+                <td class="clasjan">110.00</td>
+            </tr>
+            <tr class="yellowish">
+                <th colspan="2">Tax</th>
+                <td>8%</td>
+                <td class="clasjan">8.80</td>
+            </tr>
+            <tr class="blue">
+                <th colspan="3">Grand Total</th>
+                <td class="clasjan">$118.80</td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+</html>
